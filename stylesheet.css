@@ -69,7 +69,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: lightgray;
     font-size: 100px;
     text-align: center;
     font-family:"Lucida Handwriting";
@@ -78,7 +78,7 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: lightgray;
     font-size: 50px;
     text-align: center;
     font-family:"Lucida Handwriting";
@@ -104,6 +104,13 @@ h4 {
     position: relative;
     top: 5px;
     left: 5px;
+}
+h5  {
+    color: darkgray;;
+    font-size: 42px;
+    text-align: left;
+    font-family:"serif";
+    position: relative;
 }
 
 .boxed {
@@ -131,3 +138,62 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
+
+.tab button {
+    font: "cufon";
+    border: 0;
+    outline: 0;
+    color: darkgray;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+  }
+.tab button.active {
+    color: darkgray;
+    position: relative;
+    }
+
+.tab button:hover {
+		color: #ffffff;
+}	
+.tabcontent {
+    display: none;
+  }
+
+.item1 {
+    position:absolute; left:0px; top:0px;
+    background-color: black;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    }
+
+.item2 {
+    position:absolute; left:150px; top:0px;
+    background-color: black;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    }
+
+.item3 {
+    position:absolute; left:0px; top:100px;
+    background-color: black;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    }
+
+.item4 {
+    position:absolute; left:150px; top:100px;
+    background-color: black;
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <style>
+        body{
+            background-color: black  
+        }
+    </style>
+</head>
 
 <head>
     <link rel="stylesheet" href="stylesheet.css">
+</head>
 
 <body>
+  <script src="Function.js"></script>
+</body>
 
-<h2>Accordion</h2>
+<body>
+  <div id="wrapper">
+    <h5>
 
-<button class="accordion">Question 1</button>
-<div class="panel">
-  <p>Answer</p>
-</div>
+      <div class="item1">
+			<div class="tab">
+			  <button class="tablinks" onclick="toggleCity(event, 'Question1')">Question 1</button>
+			</div>
+			<div id="Question1" class="tabcontent">
+			    Answer
+			</div>
+      </div>
 
-<button class="accordion">Question 2</button>
-<div class="panel">
-  <p>Answer</p>
-</div>
+      <div class="item2">
+			<div class="tab">
+			  <button class="tablinks" onclick="toggleCity(event, 'Question2')">Question 2</button>
+			</div>
+			<div id="Question2" class="tabcontent">
+			    Answer
+			</div>
+    </div>
 
-<button class="accordion">Question 3</button>
-<div class="panel">
-  <p>Answer</p>
-</div>
+    <div class="item3">
+			<div class="tab">
+			  <button class="tablinks" onclick="toggleCity(event, 'Question3')">Question 3</button>
+			</div>
+			<div id="Question3" class="tabcontent">
+			    Answer
+			</div>
+    </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-
+    <div class="item4">
+			<div class="tab">
+			  <button class="tablinks" onclick="toggleCity(event, 'Question4')">Question 4</button>
+			</div>
+			<div id="Question4" class="tabcontent">
+			    Answer
+			</div>
+      </div>
+		</h5>
+  </div>
 </body>
 </html>
