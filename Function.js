@@ -21,4 +21,3 @@ function toggleCity(evt, cityName) {
     }
 }
 document.getElementById("defaultOpen").click();
-
