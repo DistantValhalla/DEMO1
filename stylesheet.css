@@ -4,16 +4,37 @@ body {
 }
 
 #wrapper {
+	display: block;
+	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1180px;
-	padding-left: 10rem;
+	padding: 0;
 	background-color: black;
+	text-align: center;
+	width: 950px;
+	height: 1425px;
 }
-figure {
-    padding: 0px;
+.cmain_logo {
+	width: 950px;
+	height: 140px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+.main_logo {
+	display: flex;
+	justify-content: left;
+	width: 175px;
+    height: 170px;
+}
+.logo_cent{
+	display: block;
+	width: 175px;
+    height: 290px;
 }
 figcaption {
+	margin: 0;
     font-variant: small-caps;
     font-family: Arial;
     font-weight: bold;
@@ -21,9 +42,8 @@ figcaption {
 	color: darkgray;
     text-align: center;
     width: 175px;
-    height: 150px;
+    height: 175px;
 	float: center;
-	margin-right: 100px, 100px, 0px, 0px;
 }
 img:hover {
     transform: scale(1.1);
@@ -38,29 +58,38 @@ img {
     -moz-transition: -moz-transform 0.2s;
     -o-transition: -o-transform 0.2s;
     width: 175px;
-    height: 175px;
+    height: 200px;
     justify-content: left;
 }
+.fixasize{
+	display: inline;
+	justify-content: center;
+	margin: 0;
+	width: 950px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 .nav {
-    display: block;
-    margin: auto;
+    display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
 	background-color: rgb(26, 26, 26);
 	list-style: none;
 	text-align: center;
-	width: 650px;
+	width: 950px;
 	height: 50px;
-	position: relative;
-    bottom: 340px;
+	padding-left: 40px;
 }
 .nav>li {
     float: left;
     text-align: center;
     padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 0px;
 }
 .nav>li a {
+	padding-left: 30px;
+	padding-right:30px ;
     font-weight: bold;
     font-family: "Lucida Handwriting";
     display: flex;
@@ -73,22 +102,27 @@ img {
 	color: red;
 }
 h1 {
-	float: center;
+	display: flex;
+	height: 150px;
+	width: 720px;
+	margin-top: 45px;
+	justify-self: center;
 	color: white;
 	font-size: 100px;
 	text-align: center;
 	font-weight: bold;
 	font-family: "Lucida Handwriting";
-	transform: translate(-7px, -400px);
 }
 h2 {
+	display: inline;
+	width: 950px;
+	margin-top: 0px;
+	margin-bottom: 50px;
 	color: white;
 	font-size: 50px;
 	text-align: center;
 	font-family: "Lucida Handwriting";
 	position: relative;
-    bottom: 360pt;
-    right: 1pt;
 }
 h3 {
 	color: lightgray;
@@ -96,9 +130,7 @@ h3 {
 	text-align: center;
 	font-family: "sans-serif";
 	position: relative;
-    bottom: 35pt;
-    left: 10px;
-    width: 98%;
+	margin: 0%;
 }
 
 h4 {
@@ -107,33 +139,35 @@ h4 {
 	text-align: center;
 	font-family: "Lucida Handwriting";
 	position: relative;
-    top: 5px;
+	margin: 0%;
 }
 h5 {
+	position: relative;
 	color: darkgray;
 	font-size: 42px;
 	text-align: left;
 	font-family: "sans-serif";
 	position: relative;
 }
+.main_text{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	height: 500px;
+}
 .boxed {
-    justify-content: center;
+	margin: 0;
 	background-color: rgb(26, 26, 26);
 	width: 945px;
-	height: 250px;
+	height: 215px;
     text-align: center;
 	color: darkgray;
-	position: relative;
-	bottom: 450px;
-    left: 45pt;
 }
-p1 {
-	color: darkgray;
-	;
-	font-size: 32px;
-	text-align: center;
-	font-family: "serif";
-	position: relative;
+.boxed_hfix{
+	width: 950px;
+	height: 200px;
+	margin-left: 50px;
+	padding-top: 10px;
 }
 a:link {
 	color: lightgray;
@@ -217,8 +251,6 @@ a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	width: 950px;
-    text-align: center;
-    padding-right: 10rem;
 }
 .footer-basic ul {
 	padding: 0;
@@ -271,40 +303,50 @@ a:hover{
 	font-size: 13px;
 	color: #aaa;
 }
-.intro{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: black;
-	width: 100%;
+.introF{
 	height: 100%;
 	display: flex;
+	margin: 0;
 	justify-content: center;
-	align-items: center;
+}
+.intro{
+	margin: 0;
+	display: flex;
+	width: 110%;
+    height: 65%;
+	background-color: black;
+	transform: translatey(-100%);
 }
 .introtext {
+	width: 100%;
+	height: 800px;
+	padding-top: 125px;
 	font-style: bold;
 	color: white;
-	font-size: 250px;
+	font-size:100pt;
 	font-family: "Lucida Handwriting";
 	text-align: center;
 }
-.slider{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgb(26, 26, 26);
-	width: 100%;
-	height: 100%;
-	transform: translateY(1500px);
-}
-
 .hide{
+	margin: 0;
 	background-color: black;
 	overflow: hidden;
 }
-
+.subtext{
+	margin: 0;
+	font-size: 50pt;
+}
 .hide span{
 	display: inline-block;
-	transform: translatey(100%);
+	transform: translatey(110%);
+}
+.slider{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-color: rgb(26, 26, 26);
+	transform: translateY(100%);
 }
