@@ -1,8 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
+ background-color: black;
 }
-
 #wrapper {
 	display: block;
 	justify-content: center;
@@ -12,7 +12,18 @@ body {
 	background-color: black;
 	text-align: center;
 	width: 950px;
-	height: 1425px;
+	height: 1200px;
+}
+#appointment {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+    width: 950px;
+    height: 1200px;
 }
 .cmain_logo {
 	width: 950px;
@@ -20,7 +31,7 @@ body {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0;
+	margin-top: 10px;
 }
 .main_logo {
 	display: flex;
@@ -71,33 +82,29 @@ img {
 	margin-right: auto;
 }
 .nav {
-    display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	background-color: rgb(26, 26, 26);
-	list-style: none;
+	display: block;
+	  background-color: rgb(26, 26, 26);
+	  list-style: none;
+	  text-align: center;
+	  width: 950px;
+	  height: 50px;
+	margin-top: 20px;
+  }
+  .nav>li {
+	  float: left;
+	  text-align: center;
+  }
+  .nav>li a {
+	  padding-left: 30px;
+	  padding-right:30px ;
+	font-weight: bold;
+	font-family: "Lucida Handwriting";
+	display: flex;
 	text-align: center;
-	width: 950px;
-	height: 50px;
-	padding-left: 40px;
-}
-.nav>li {
-    float: left;
-    text-align: center;
-    padding-top: 10px;
-}
-.nav>li a {
-	padding-left: 30px;
-	padding-right:30px ;
-    font-weight: bold;
-    font-family: "Lucida Handwriting";
-    display: flex;
-    text-align: center;
-	text-decoration: none;
-	color: lightgray;
-	font-size: 20px;
-}
+	  text-decoration: none;
+	  color: lightgray;
+	  font-size: 20px;
+  }
 .nav>li>a:hover {
 	color: red;
 }
@@ -119,7 +126,7 @@ h2 {
 	margin-top: 0px;
 	margin-bottom: 50px;
 	color: white;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	font-family: "Lucida Handwriting";
 	position: relative;
@@ -167,7 +174,9 @@ h5 {
 	width: 950px;
 	height: 200px;
 	margin-left: 50px;
-	padding-top: 10px;
+	margin-bottom: 40px;
+	padding-top: 30px;
+	padding-right: 15px;
 }
 a:link {
 	color: lightgray;
@@ -251,6 +260,8 @@ a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	width: 950px;
+	position:relative;
+	justify-content: center;
 }
 .footer-basic ul {
 	padding: 0;
@@ -262,41 +273,81 @@ a:hover{
     margin:auto;
 }
 .footer-basic li {
-	padding: 0 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .footer-basic ul a {
 	color: inherit;
 	text-decoration: none;
 	opacity: 0.8;
-    width:400px;
     margin:auto;
-}
-.footer-basic ul a:hover {
-	opacity: 1;
 }
 
-.footer-basic .social {
-	text-align: center;
-	padding-bottom: 25px;
-    width:400px;
-    margin:auto;
-}
-.footer-basic .social>a {
-	font-size: 24px;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	display: inline-block;
-	text-align: center;
-	border-radius: 50%;
-	border: 1px solid rgb(255, 255, 255);
-	margin: 0 4px;
-	color: white;
-	opacity: 0.75;
-}
-.footer-basic .social>a:hover {
-	opacity: 2.0;
-}
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+  
 .footer-basic .copyright {
 	margin-top: 15px;
 	text-align: center;
@@ -313,7 +364,7 @@ a:hover{
 	margin: 0;
 	display: flex;
 	width: 110%;
-    height: 65%;
+    height: 80%;
 	background-color: black;
 	transform: translatey(-100%);
 }
@@ -327,18 +378,19 @@ a:hover{
 	font-family: "Lucida Handwriting";
 	text-align: center;
 }
-.hide{
+.hides{
 	margin: 0;
 	background-color: black;
 	overflow: hidden;
+	display: inline-block;
 }
 .subtext{
 	margin: 0;
 	font-size: 50pt;
 }
-.hide span{
+.hides span{
 	display: inline-block;
-	transform: translatey(110%);
+	transform: translatey(150%);
 }
 .slider{
 	width: 100%;
@@ -349,4 +401,14 @@ a:hover{
 	left: 0%;
 	background-color: rgb(26, 26, 26);
 	transform: translateY(100%);
+}
+
+.Calander{
+	width: auto;
+	height: auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.hasDatepicker{
+	background-color: #555;
 }

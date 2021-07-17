@@ -1,61 +1,98 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scheduling</title>
+<body>
+  <style>
+    body{
+      background-color: black  
+      }
+    </style>
+      <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+      <link href="stylesheet.css" rel="stylesheet">
+      <section id="appointment">
+    <div id="nav">
+      <ul class="nav">
+        <li>
+          <a href="index.html" style="padding-left:100px; color: #8b0000;">Home</a>
+        </li>
+
+        <li>
+          <a href="appointment.html">Appointment</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+        <li>
+          <a href="instagram.html">Instagram</a>
+        </li>
+
+        <li>
+          <a href="faq.html" style="padding-right:100px;">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>    
   
-  <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <div class="Calander">
+      <p>Date: <input type="text" id="datepicker"></p>
+    </div>
+
+      <div class="footer-basic">
+        <footer>
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="tel:1-505-927-9148" class="contact-icon">
+            <i class="fa fa-phone" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="mailto:escotats@gmail.com"  class="contact-icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/inkreputetat2/" class="contact-icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/ink_repute_tattoo/" class="contact-icon">
+            <i class="fa fa-instagram"aria-hidden="true"></i></a>
+            </li>       
+          </ul>
+          <hr>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="index.html">Home</a>
+            </li>
+  
+            <li class="list-inline-item">
+              <a href="faq.html">FAQ</a>
+            </li>
+  
+  
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+  
+  
+            <li class="list-inline-item">
+              <a href="appointment.html">Schedule</a>
+            </li>
+          </ul>
+          <p class="copyright">Company Name © 2021</p>
+        </footer>
+      </div>
+  </div>
+</body>
+<body>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <style>
-      body{
-          background-color: black  
-      }
-  </style>
-  </head>
-<!-- Can't get this bloody thing to link so it is not reliant on being able to connect to a website-->
-  <body>
-      <script 
-              src="jquery/jquery-ui.js">
-      </script> 
-  </body>
-
-  <script>
-
-    
+  <script src="jquery/jquery-ui.js"></script> 
+<script>
   $( function() {
-    $( "#datepicker" ).datepicker({
-      changeMonth: true,
-      changeYear: true
-    });
+  $( "#datepicker" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+  });
   } );
-  </script>
-</head>
-  <div id="wrapper">
-  
-  <body>
-      <p>Date: <input type="text" id="datepicker"></p>
-  </body>
-
-  <div class="footer-basic">
-    
-    <footer>
-        <div class="social"><a href=https://www.instagram.com/ink_repute_tattoo/><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Home</a></li>
-            <li class="list-inline-item"><a href="faq.html">FAQ</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
-            <li class="list-inline-item"><a href="appointment.html">Schedule</a></li>
-            
-        </ul>
-        <p class="copyright">Company Name © 2018</p>
-    </footer>
-  </div>
-</div>
-</html>
+</script>
