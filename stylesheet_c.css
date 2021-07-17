@@ -40,6 +40,7 @@ body {
 	font-size: 20px;
 }
   .section-header {
+    display: inline-block;
     text-align: center;
     font: 300 60px 'Oswald', sans-serif;
     color: #fff;
@@ -49,18 +50,29 @@ body {
     width: auto;
     height: auto;
   }
-  
+  .info-contact-container{
+    display: inline-block;
+    justify-content: center;
+  }
+  .h9{
+    text-align: center;
+  }
   .contact-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     padding: 20px;
     position: relative;
     max-width: 840px;
     margin-top: 30px;
   }
-  
+  .spacebe{
+    display: block;
+    width: 50px;
+    height: 10px;
+    margin-right: 10px;
+  }
   /* Left contact page */
   .form-horizontal {
     /*float: left;*/
@@ -101,7 +113,24 @@ body {
   .alt-send-button:hover {
     transform: translate3d(0px, -29px, 0px);
   }
-  
+    /* Begin Right Map */
+  .map{
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: black;
+    width: 400px;
+    height: 401px;
+    padding-bottom:10px;
+  }
+   
+  .map iframe{
+    width: 400px;
+    height: 350px;
+  }
+
   /* Begin Right Contact Page */
   .direct-contact-container {
     max-width: 400px;
@@ -118,6 +147,7 @@ body {
   }
   
   .list-item {
+    text-align: center;
     line-height: 4;
     color: #aaa;
   }
@@ -152,8 +182,35 @@ body {
   }
   
   
-  /* Social Media Icons */
-  .social-media-list {
+/*Footer settings*/
+.footer-basic{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	position:relative;
+	justify-content: center;
+}
+.footer-basic ul {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.6;
+	color: white;
+    margin:auto;
+}
+.footer-basic li {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.footer-basic ul a {
+	color: inherit;
+	text-decoration: none;
+	opacity: 0.8;
+    margin:auto;
+}
+
+.social-media-list {
     position: relative;
     font-size: 22px;
     text-align: center;
@@ -176,7 +233,7 @@ body {
     border-radius: 50%;
     color: #fff;
     background-color: rgb(27,27,27);
-    cursor: auto; 
+    cursor: pointer; 
     transition: all .2s ease-in-out;
   }
   
@@ -286,3 +343,4 @@ body {
       width: 99%;
     }
   }
+  
