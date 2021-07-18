@@ -17,3 +17,5 @@ tl.fromTo(".cmain_logo", {opacity: 0}, {opacity: 1, duration: 1},);
 tl.fromTo(".main_text", {opacity: 0}, {opacity: 1, duration: 1}, ("-=1"));
 tl.fromTo(".boxed", {opacity: 0}, {opacity: 1, duration: 1});
 tl.fromTo(".footer-basic", {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
+
+
