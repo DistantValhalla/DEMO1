@@ -13,6 +13,7 @@ body {
     text-align: center;
     width: 950px;
     height: 1200px;
+	overflow: hidden;
 }
 #appointment {
     display: block;
@@ -167,7 +168,6 @@ h5 {
 	margin-left: 50px;
 	margin-bottom: 40px;
 	padding-top: 30px;
-	padding-right: 15px;
 }
 a:link {
 	color: lightgray;
