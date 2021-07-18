@@ -1,18 +1,18 @@
 body {
 	margin: 0;
 	padding: 0;
- background-color: black;
+ 	background-color: black;
 }
 #wrapper {
-	display: block;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	background-color: black;
-	text-align: center;
-	width: 950px;
-	height: 1200px;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+    width: 950px;
+    height: 1200px;
 }
 #appointment {
     display: block;
@@ -25,6 +25,33 @@ body {
     width: 950px;
     height: 1200px;
 }
+.nav {
+	display: block;
+	  background-color: rgb(26, 26, 26);
+	  list-style: none;
+	  text-align: center;
+	  width: 950px;
+	  height: 50px;
+	margin-top: 20px;
+  }
+  .nav>li {
+	  float: left;
+	  text-align: center;
+  }
+  .nav>li a {
+	  padding-left: 30px;
+	  padding-right:30px ;
+	font-weight: bold;
+	font-family: "Lucida Handwriting";
+	display: flex;
+	text-align: center;
+	  text-decoration: none;
+	  color: lightgray;
+	  font-size: 20px;
+  }
+  .nav>li>a:hover {
+	  color: red;
+  }
 .cmain_logo {
 	width: 950px;
 	height: 140px;
@@ -71,42 +98,6 @@ img {
     width: 175px;
     height: 200px;
     justify-content: left;
-}
-.fixasize{
-	display: inline;
-	justify-content: center;
-	margin: 0;
-	width: 950px;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-.nav {
-	display: block;
-	  background-color: rgb(26, 26, 26);
-	  list-style: none;
-	  text-align: center;
-	  width: 950px;
-	  height: 50px;
-	margin-top: 20px;
-  }
-  .nav>li {
-	  float: left;
-	  text-align: center;
-  }
-  .nav>li a {
-	  padding-left: 30px;
-	  padding-right:30px ;
-	font-weight: bold;
-	font-family: "Lucida Handwriting";
-	display: flex;
-	text-align: center;
-	  text-decoration: none;
-	  color: lightgray;
-	  font-size: 20px;
-  }
-.nav>li>a:hover {
-	color: red;
 }
 h1 {
 	display: flex;
@@ -363,7 +354,7 @@ a:hover{
 .intro{
 	margin: 0;
 	display: flex;
-	width: 110%;
+	width: 100%;
     height: 80%;
 	background-color: black;
 	transform: translatey(-100%);

@@ -39,6 +39,9 @@ body {
 	color: lightgray;
 	font-size: 20px;
 }
+.nav>li>a:hover {
+	color: red;
+}
   .section-header {
     display: inline-block;
     text-align: center;
