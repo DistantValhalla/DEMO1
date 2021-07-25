@@ -33,7 +33,7 @@ body {
 	  list-style: none;
 	  text-align: center;
 	  width: 950px;
-	  height: 60px;
+	  height: 45px;
 	margin-top: 20px;
   }
   .nav>li {
@@ -44,12 +44,12 @@ body {
   .nav>li a {
 	padding-left: 30px;
 	padding-right:30px ;
-	font-family: "Norican";
+	font-family: 'Martel', serif;
 	display: flex;
 	text-align: center;
 	text-decoration: none;
 	color: lightgray;
-	font-size: 35px;
+	font-size: 25px;
   }
   .nav>li>a:hover {
 	  color: red;
@@ -127,9 +127,10 @@ h4 {
 	color: darkgray;
 	font-size: 42px;
 	text-align: center;
-	font-family: "Norican";
+	font-family: 'Martel', serif;
 	position: relative;
 	margin: 0%;
+	height: 55px;
 }
 h5 {
 	position: relative;
@@ -143,7 +144,7 @@ h5 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 950px;
-	height: 325px;
+	height: 275px;
 }
 .boxed {
 
