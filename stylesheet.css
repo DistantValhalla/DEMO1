@@ -163,9 +163,10 @@ h5 {
 	color: darkgray;
 }
 .boxed_hfix{
-	width: 950px;
+	width: 750px;
 	height: 200px;
-	margin-left: 50px;
+	margin-left: 145px;
+	margin-right: 55px;
 	margin-bottom: 40px;
 	padding-top: 30px;
 }
