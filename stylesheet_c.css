@@ -16,32 +16,33 @@ body {
     height: 1200px;
   }
   .nav {
-  display: block;
-	background-color: rgb(26, 26, 26);
-	list-style: none;
-	text-align: center;
-	width: 950px;
-	height: 50px;
-  margin-top: 20px;
-}
-.nav>li {
-    float: left;
+    display: flex;
+    justify-content: center;
+      background-color: rgb(26, 26, 26);
+      list-style: none;
+      text-align: center;
+      width: 950px;
+      height: 60px;
+    margin-top: 20px;
+    }
+    .nav>li {
+      float: left;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .nav>li a {
+    padding-left: 30px;
+    padding-right:30px ;
+    font-family: "Norican";
+    display: flex;
     text-align: center;
-}
-.nav>li a {
-	padding-left: 30px;
-	padding-right:30px ;
-  font-weight: bold;
-  font-family: "Lucida Handwriting";
-  display: flex;
-  text-align: center;
-	text-decoration: none;
-	color: lightgray;
-	font-size: 20px;
-}
-.nav>li>a:hover {
-	color: red;
-}
+    text-decoration: none;
+    color: lightgray;
+    font-size: 35px;
+    }
+    .nav>li>a:hover {
+      color: red;
+    }
   .section-header {
     display: inline-block;
     text-align: center;
