@@ -160,6 +160,8 @@ h5 {
 	color: darkgray;
 }
 .boxed_hfix{
+	display: flex;
+	justify-content: center;
 	width: 750px;
 	height: 200px;
 	margin-left: 145px;
