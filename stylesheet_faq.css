@@ -1,0 +1,163 @@
+html {
+	background-color: black;
+}
+
+#appointment {
+	display: block;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	background-color: black;
+	text-align: center;
+	width: 950px;
+	height: 1200px;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(26, 26, 26);
+	list-style: none;
+	text-align: center;
+	width: 950px;
+	height: 45px;
+	margin-top: 20px;
+}
+
+.nav>li {
+	float: left;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.nav>li a {
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: 'Martel', serif;
+	display: flex;
+	text-align: center;
+	text-decoration: none;
+	color: lightgray;
+	font-size: 25px;
+}
+
+.nav>li>a:hover {
+	color: red;
+}
+
+.cmain_logo {
+	width: 950px;
+	height: 10px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.main_logo {
+	display: flex;
+	justify-content: left;
+	width: 175px;
+	height: 170px;
+}
+
+.logo_cent {
+	display: block;
+	width: 175px;
+	height: 290px;
+}
+
+img:hover {
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+img {
+	transition: transform 0.2s;
+	-webkit-transition: -webkit-transform 0.2s;
+	-moz-transition: -moz-transform 0.2s;
+	-o-transition: -o-transform 0.2s;
+	width: 175px;
+	height: 200px;
+	justify-content: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Here*/
+#wrapper {
+	display: block;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	background-image: url(pexels-djordje-petrovic-1433270.jpg);
+	
+	text-align: center;
+	width: 950px;
+	height: 1200px;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+.accordion_comp {
+	margin-top: 300px;
+}
+
+.accordion {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	cursor: pointer;
+	padding: 36px;
+	width: 100%;
+	border-style: dotted;
+
+	text-align: center;
+	outline: white;
+	font-size: 15px;
+	transition: 0.4s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+	max-width: 40rem;
+	margin: 0 auto;
+}
+
+.active,
+.accordion:hover {
+	background-color: red;
+}
+
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-image: url(pexels-djordje-petrovic-1433270.jpg);
+	color:white;
+	overflow: hidden;
+	max-width: 40rem;
+	margin: 0 auto;
+}

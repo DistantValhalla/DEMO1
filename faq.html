@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-        body{
-            background-color: black  
-        }
-    </style>
-</head>
 
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="stylesheet_faq.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <script src="Function.js"></script>
-</body>
 
-<body>
-  <div id="wrapper">
-    <h5>
 
-      <div class="item1">
-			<div class="tab">
-			  <button class="tablinks" onclick="toggleCity(event, 'Question1')">Question 1</button>
-			</div>
-			<div id="Question1" class="tabcontent">
-			    Answer
-			</div>
+  <section id="wrapper">
+    <div id="nav">
+      <ul class="nav">
+        <li>
+          <a href="index.html" style="padding-left:100px; color: #8b0000;">Home</a>
+        </li>
+
+        <li>
+          <a href="appointment.html">Appointment</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/ink_repute_tattoo/">Instagram</a>
+        </li>
+
+        <li>
+          <a href="faq.html" style="padding-right:100px;">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="cmain_logo">
+      <div class="main_logo">
+        <img src="images/shop/logo.png" alt='missing' />
       </div>
-
-      <div class="item2">
-			<div class="tab">
-			  <button class="tablinks" onclick="toggleCity(event, 'Question2')">Question 2</button>
-			</div>
-			<div id="Question2" class="tabcontent">
-			    Answer
-			</div>
     </div>
 
-    <div class="item3">
-			<div class="tab">
-			  <button class="tablinks" onclick="toggleCity(event, 'Question3')">Question 3</button>
-			</div>
-			<div id="Question3" class="tabcontent">
-			    Answer
-			</div>
-    </div>
 
-    <div class="item4">
-			<div class="tab">
-			  <button class="tablinks" onclick="toggleCity(event, 'Question4')">Question 4</button>
-			</div>
-			<div id="Question4" class="tabcontent">
-			    Answer
-			</div>
+
+
+    <div class="accordion_comp">
+      <button class="accordion">Section 1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
       </div>
-		</h5>
-  </div>
+
+      <button class="accordion">Section 2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Section 3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+
+      <script src="faq.js"></script>
+    </div>
+  </section>
 </body>
+
 </html>
